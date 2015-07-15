@@ -25,6 +25,7 @@ import com.mh2z.activity.R;
 public class FragHome extends Fragment {
 	private View view;
 	private WebView webview;
+	private String appindex = "http://192.168.1.106/HDWiki/index.php?app";
 	private String devbaseURL = "http://192.168.1.106/HDWiki/index.php";
 	private String proBaseURL = "http://mhbb.mhedu.sh.cn:8080/hdwiki/index.php";
 	private List<Cookie> cookies;
@@ -38,7 +39,7 @@ public class FragHome extends Fragment {
 		cookies = new ArrayList<Cookie>();
 		WebSettings ws = webview.getSettings();
 		ws.setJavaScriptEnabled(true);
-		ws.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+		ws.setCacheMode(WebSettings.LOAD_NO_CACHE);
 		ws.setSupportZoom(true);
 		ws.setBuiltInZoomControls(true);
 		ws.setUseWideViewPort(true);
@@ -87,7 +88,11 @@ public class FragHome extends Fragment {
 				+ cid);
 
 	}
+	
+	public void visitHome() {
+		webview.loadUrl(appindex);
 
+	}
 	
 
 	

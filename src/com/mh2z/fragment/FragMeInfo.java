@@ -116,6 +116,7 @@ public class FragMeInfo extends Fragment {
 	}
 
 	private void logout() {
+		Log.e("Logout", "Logout");
 		Thread subThread = new Thread(new Runnable() {
 
 			@Override

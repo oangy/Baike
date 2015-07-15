@@ -61,27 +61,32 @@ containing a value of this type.
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int adas=0x7f020000;
-        public static final int bg_shape=0x7f020001;
-        public static final int dasd=0x7f020002;
-        public static final int dasfasd=0x7f020003;
-        public static final int dassadfd=0x7f020004;
-        public static final int dsadfdf=0x7f020005;
-        public static final int dsadsa=0x7f020006;
-        public static final int ic_cate=0x7f020007;
-        public static final int ic_cate2=0x7f020008;
-        public static final int ic_doc=0x7f020009;
-        public static final int ic_drawer_home=0x7f02000a;
-        public static final int ic_drawer_me=0x7f02000b;
-        public static final int ic_drawer_search=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int ic_preference_first_normal=0x7f02000e;
-        public static final int ic_preference_last_normal=0x7f02000f;
-        public static final int ic_preference_normal=0x7f020010;
-        public static final int ic_preference_pressed=0x7f020011;
-        public static final int listview_bg=0x7f020012;
-        public static final int mm_normal=0x7f020013;
-        public static final int tabbg=0x7f020014;
+        public static final int bg_shape=0x7f020000;
+        public static final int dasd=0x7f020001;
+        public static final int dasfasd=0x7f020002;
+        public static final int dassadfd=0x7f020003;
+        public static final int dsadfdf=0x7f020004;
+        public static final int dsadsa=0x7f020005;
+        public static final int home=0x7f020006;
+        public static final int home_1=0x7f020007;
+        public static final int ic_cate=0x7f020008;
+        public static final int ic_cate2=0x7f020009;
+        public static final int ic_doc=0x7f02000a;
+        public static final int ic_drawer_home=0x7f02000b;
+        public static final int ic_drawer_me=0x7f02000c;
+        public static final int ic_drawer_search=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int ic_preference_first_normal=0x7f02000f;
+        public static final int ic_preference_last_normal=0x7f020010;
+        public static final int ic_preference_normal=0x7f020011;
+        public static final int ic_preference_pressed=0x7f020012;
+        public static final int layers=0x7f020013;
+        public static final int layers_1=0x7f020014;
+        public static final int listview_bg=0x7f020015;
+        public static final int mm_normal=0x7f020016;
+        public static final int tabbg=0x7f020017;
+        public static final int user=0x7f020018;
+        public static final int user_1=0x7f020019;
     }
     public static final class id {
         public static final int action_settings=0x7f09001e;
@@ -94,9 +99,9 @@ containing a value of this type.
         public static final int frag_userinfo=0x7f090019;
         public static final int fraghome=0x7f090007;
         public static final int fragme=0x7f090009;
-        public static final int id_indicator_one=0x7f090005;
+        public static final int id_indicator_one=0x7f090004;
         public static final int id_indicator_three=0x7f090006;
-        public static final int id_indicator_two=0x7f090004;
+        public static final int id_indicator_two=0x7f090005;
         public static final int image=0x7f090001;
         public static final int info_exit=0x7f09001d;
         public static final int info_gender=0x7f09001c;

@@ -114,7 +114,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		ChangeColorIconWithTextView three = (ChangeColorIconWithTextView) findViewById(R.id.id_indicator_three);
 
 		mTabIndicator.add(one);
-		// mTabIndicator.add(two);
+		 mTabIndicator.add(two);
 		mTabIndicator.add(three);
 
 		one.setOnClickListener(this);
@@ -131,14 +131,17 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		switch (v.getId()) {
 		case R.id.id_indicator_one:
 			mTabIndicator.get(0).setIconAlpha(1.0f);
-			mViewPager.setCurrentItem(0, false);
-			break;
-		case R.id.id_indicator_two:
-			// mTabIndicator.get(1).setIconAlpha(1.0f);
 			mDrawerLayout.openDrawer(Gravity.LEFT);
 			break;
-		case R.id.id_indicator_three:
+			
+		case R.id.id_indicator_two:			
 			mTabIndicator.get(1).setIconAlpha(1.0f);
+			mViewPager.setCurrentItem(0, false);
+			FragHome fHome = (FragHome) mTabs.get(0);
+			fHome.visitHome();
+			break;
+		case R.id.id_indicator_three:
+			mTabIndicator.get(2).setIconAlpha(1.0f);
 			mViewPager.setCurrentItem(2, false);
 			break;
 		}
@@ -425,6 +428,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			if (mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
+				mDrawerLayout.closeDrawer(Gravity.LEFT);
+			}
+		}
 		if (keyCode == KeyEvent.KEYCODE_BACK
 				&& event.getAction() == KeyEvent.ACTION_DOWN) {
 			if ((System.currentTimeMillis() - exitTime) > 2000) {

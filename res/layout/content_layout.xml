@@ -20,22 +20,22 @@
         
         
         <com.mh2z.fragment.ChangeColorIconWithTextView
-            android:id="@+id/id_indicator_two"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:padding="5dp"
-            zhy:icon="@drawable/ic_drawer_search"
-            zhy:text="@string/tab_category"
-            zhy:text_size="12sp" />
-
-        <com.mh2z.fragment.ChangeColorIconWithTextView
             android:id="@+id/id_indicator_one"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="5dp"
-            zhy:icon="@drawable/ic_drawer_home"
+            zhy:icon="@drawable/layers_1"
+            zhy:text="@string/tab_category"
+            zhy:text_size="12sp" />
+
+        <com.mh2z.fragment.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/home_1"
             zhy:text="@string/tab_home"
             zhy:text_size="12sp" />
 
@@ -47,7 +47,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="5dp"
-            zhy:icon="@drawable/ic_drawer_me"
+            zhy:icon="@drawable/user_1"
             zhy:text="@string/tab_me"
             zhy:text_size="12sp" />
 
