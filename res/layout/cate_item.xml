@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cate_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
@@ -21,10 +21,10 @@
     <TextView
         android:id="@+id/cate_name"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:ellipsize="end"
         android:gravity="center_vertical"
         android:singleLine="true"
-        android:textSize="16sp" />
+        android:textSize="12sp" />
 
 </LinearLayout>
