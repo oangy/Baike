@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebSettings;
+import android.webkit.WebSettings.LayoutAlgorithm;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -25,8 +26,9 @@ import com.mh2z.activity.R;
 public class FragHome extends Fragment {
 	private View view;
 	private WebView webview;
-	private String appindex = "http://192.168.1.106/HDWiki/index.php?app";
-	private String devbaseURL = "http://192.168.1.106/HDWiki/index.php";
+	private String appindex = "http://58.198.177.38:8080/HDWiki/index.php?app";
+	private String devbaseURL_1 = "http://192.168.1.106/HDWiki/index.php";
+	private String devbaseURL = "http://58.198.177.38:8080/HDWiki/index.php";
 	private String proBaseURL = "http://mhbb.mhedu.sh.cn:8080/hdwiki/index.php";
 	private List<Cookie> cookies;
 
@@ -37,17 +39,21 @@ public class FragHome extends Fragment {
 		view = inflater.inflate(R.layout.frag_home, null);
 		webview = (WebView) view.findViewById(R.id.webView1_home);
 		cookies = new ArrayList<Cookie>();
+		
+		
 		WebSettings ws = webview.getSettings();
-		ws.setJavaScriptEnabled(true);
-		ws.setCacheMode(WebSettings.LOAD_NO_CACHE);
-		ws.setSupportZoom(true);
-		ws.setBuiltInZoomControls(true);
-		ws.setUseWideViewPort(true);
-		ws.setLoadWithOverviewMode(true);
-
-	
-
-		// ws.setLayoutAlgorithm(LayoutAlgorithm.NARROW_COLUMNS);
+//		ws.setJavaScriptEnabled(true);
+//		ws.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+		
+//		ws.setSupportZoom(true);
+//		ws.setBuiltInZoomControls(true);
+//		ws.setUseWideViewPort(true);
+//		ws.setLoadWithOverviewMode(true);
+//		ws.setUseWideViewPort(true);
+		ws.setLayoutAlgorithm(LayoutAlgorithm.SINGLE_COLUMN);
+//		ws.setLoadWithOverviewMode(true); 
+		
+		
 		webview.setWebViewClient(new WebViewClient() {
 
 			@Override
@@ -84,7 +90,7 @@ public class FragHome extends Fragment {
 
 	public void visitCate(int cid) {
 
-		webview.loadUrl(devbaseURL+ "?category-view-"
+		webview.loadUrl(devbaseURL+ "?app-category_view-"
 				+ cid);
 
 	}

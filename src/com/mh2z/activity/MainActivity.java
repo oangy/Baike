@@ -66,7 +66,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	private List<ListItem> topcateList;
 	private List<ListItem> subcateList;
 	private List<ListItem> thirdcaList;
-	private String devbaseURL = "http://192.168.1.106/HDWiki/index.php";
+	private String devbaseURL_1 = "http://192.168.1.106/HDWiki/index.php";
+	private String devbaseURL = "http://58.198.177.38:8080/HDWiki/index.php";
 	private String proBaseURL = "http://mhbb.mhedu.sh.cn:8080/hdwiki/index.php";
 
 	// 初始化
